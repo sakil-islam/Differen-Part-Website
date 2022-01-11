@@ -40,3 +40,43 @@
     outline: 0;
     padding: 0.5em 0.1em;
 }
+
+
+/* --------------------------------------- */
+
+.searchboxbtn {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .searchboxbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .searchboxdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .searchboxdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 1160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .searchboxdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .searchboxdropdown a:hover {background-color: #ddd;}
+  
+  .resultshow {display: block;}
