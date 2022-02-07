@@ -1,0 +1,56 @@
+
+.container {
+  position: relative;
+  top: 500px;
+  left: 0;
+}
+.container .TopHeader {
+  min-height: 4rem;
+  background-color: royalblue;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .TopHeader .InputBox{
+  max-width: 600px;
+  height: 36px;
+  background-color: #fff;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+.container .TopHeader .InputBox input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  cursor: pointer;
+}
+.container .TopHeader .InputBox .SearchResult {
+  position: absolute;
+  top:36px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.4);
+  padding-inline-start: 0px;
+}
+
+.container .TopHeader .InputBox .SearchResult li {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #696262;
+  padding: 10px 0px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.container .TopHeader .InputBox .SearchResult li:hover {
+  background-color: #eee;
+}
