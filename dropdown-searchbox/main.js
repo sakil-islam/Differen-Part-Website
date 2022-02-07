@@ -4,8 +4,9 @@ const searchBox = document.querySelector(".search-box input");
 
 const optionsList = document.querySelectorAll(".option");
 
-selected.addEventListener("click", () => {
+selected.addEventListener("click", (e) => {
   optionsContainer.classList.toggle("active");
+  optionsContainer.classList.toggle("search-box-active");
 
   searchBox.value = "";
   filterList("");
@@ -18,7 +19,7 @@ selected.addEventListener("click", () => {
 optionsList.forEach(o => {
   o.addEventListener("click", () => {
     selected.innerHTML = o.querySelector("label").innerHTML;
-    optionsContainer.classList.remove("active");
+    // optionsContainer.classList.remove("active");
   });
 });
 

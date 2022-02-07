@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -15,88 +15,6 @@
             <div class="tags-input" data-name="tags-input">
             </div>
         </p>
-        <div class="searchboxdropdown">
-            <button class="searchboxbtn"><i class='fas fa-angle-down'></i></button>
-            <div id="mysearchDropdown" class="searchboxdropdown-content">
-              <a href="#home">Home</a>
-            </div>
-        </div>
         <script src="tags.js"></script>
     </body>
-</html>
-  -->
-
-  <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<style>
-.searchboxbtn {
-  background-color: #3498DB;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.searchboxbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.searchboxdropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.searchboxdropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 1160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.searchboxdropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.searchboxdropdown a:hover {background-color: #ddd;}
-
-.resultshow {display: block;}
-</style>
-</head>
-<body>
-
-
-<div class="searchboxdropdown">
-  <button onclick="myFunction()" class="searchboxbtn"><i class='fas fa-angle-down'></i></button>
-  <div id="mysearchDropdown" class="searchboxdropdown-content">
-    <a href="#home">Home</a>
-  </div>
-</div>
-
-<script>
-function myFunction() {
-  document.getElementById("mysearchDropdown").classList.toggle("resultshow");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.searchboxbtn')) {
-    var dropdowns = document.getElementsByClassName("searchboxdropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('resultshow')) {
-        openDropdown.classList.remove('resultshow');
-      }
-    }
-  }
-}
-</script>
-
-</body>
 </html>
